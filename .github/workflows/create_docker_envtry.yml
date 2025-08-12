@@ -1,0 +1,14 @@
+name: create docker: envmid
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker/build-push-action@v6
+        with:
+          file: docenv_envtry.txt
+          context: docker
+          push: true
+          platforms: linux/amd64, linux/arm64
+          tags: ghcr.io/cnnmmd/xoxxox/envtry:001
