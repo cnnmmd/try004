@@ -21,8 +21,8 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - uses: docker/build-push-action@v6
         with:
-          file: .export/cnf/xoxxox/docenv_envtry.txt
-          context: .export/cnf/xoxxox/docenv_envtry
+          file: ./export/cnf/xoxxox/docenv_envtry${{ github.arc }}.txt
+          context: ./export/cnf/xoxxox/docenv_envtry${{ github.arc }}
           push: true
           platforms: linux/amd64, linux/arm64
-          tags: ghcr.io/cnnmmd/xoxxox/envtry:001
+          tags: ghcr.io/cnnmmd/xoxxox/envtry:001${{ github.arc }}
