@@ -13,4 +13,3 @@ jobs:
       env: "envtry"
       ver: "001"
       arc: "arc001"
-    secrets: inherit
