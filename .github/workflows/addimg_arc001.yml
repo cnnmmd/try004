@@ -1,0 +1,16 @@
+name: "addimg_arc001"
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+jobs:
+  call:
+    uses: cnnmmd/manage_docenv/.github/workflows/addimg_001.yml@master
+    with:
+      rep: "cnnmmd/try004"
+      nam: "xoxxox"
+      env: "envtry"
+      ver: "001"
+      arc: "arc001"
+    secrets: inherit
