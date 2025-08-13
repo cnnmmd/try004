@@ -1,0 +1,13 @@
+name: "addimg"
+on:
+  workflow_dispatch:
+jobs:
+  call:
+    uses: cnnmmd/manage_docenv/.github/workflows/addimg_001.yml@master
+    with:
+      rep: "cnnmmd/try004"
+      nam: "xoxxox"
+      env: "envtry"
+      ver: "001"
+      arc: "arc001"
+    secrets: inherit
