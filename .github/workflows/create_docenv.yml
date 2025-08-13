@@ -1,6 +1,9 @@
 name: "create docker: envmid"
 on:
   workflow_dispatch:
+    inputs:
+      arc:
+        type: string
 permissions:
   contents: read
   packages: write
