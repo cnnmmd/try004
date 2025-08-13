@@ -1,6 +1,9 @@
 name: "addimg"
 on:
   workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
 jobs:
   call:
     uses: cnnmmd/manage_docenv/.github/workflows/addimg_001.yml@master
